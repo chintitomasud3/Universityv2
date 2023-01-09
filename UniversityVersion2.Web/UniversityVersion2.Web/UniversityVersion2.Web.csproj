@@ -2,12 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-UniversityVersion2.Web-AEA7271F-6C4B-47E0-88ED-B37B6D798F5A</UserSecretsId>
-    <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
+    <UserSecretsId>aspnet-UniversityVersion2.Web-BF98397A-6A1B-4DD9-B6B7-9126133AFC4C</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.AzureAD.UI" Version="3.1.27" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.27" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.27" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.27" />
   </ItemGroup>
 
 </Project>

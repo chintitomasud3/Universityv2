@@ -11,7 +11,8 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-UniversityVersion2.Web-AEA7271F-6C4B-47E0-88ED-B37B6D798F5A")]
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-UniversityVersion2.Web-BF98397A-6A1B-4DD9-B6B7-9126133AFC4C")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniversityVersion2.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
