@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using UniversityVersion2.Web.Models;
 
 namespace UniversityVersion2.Web.Data
 {
@@ -12,5 +13,7 @@ namespace UniversityVersion2.Web.Data
             : base(options)
         {
         }
+        public DbSet<UniversityVersion2.Web.Models.Employee> Employees { get; set; }
+        public DbSet<EmpDepartment> Departments { get; set; }
     }
 }

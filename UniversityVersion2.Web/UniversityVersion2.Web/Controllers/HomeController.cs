@@ -33,5 +33,12 @@ namespace UniversityVersion2.Web.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public ActionResult Details() {
+            Employee employee = new Employee();
+            employee.Name = "Masudur rahman";
+            employee.Address = "japan garden city";
+            return View(employee);
+        }
     }
 }
