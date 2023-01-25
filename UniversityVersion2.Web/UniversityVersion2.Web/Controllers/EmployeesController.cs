@@ -54,8 +54,10 @@ namespace UniversityVersion2.Web.Controllers
 
         // GET: Employees/Create
         public IActionResult Create()
+
         {
-            ViewData["EmpDepartmentId"] = new SelectList(_context.Departments, "Id", "Id");
+            ViewBag.gender = new List<string>() { "Male", "Female" };
+            ViewData["EmpDepartmentId"] = new SelectList(_context.Departments, "Id", "Name");
             return View();
         }
 
@@ -72,7 +74,8 @@ namespace UniversityVersion2.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EmpDepartmentId"] = new SelectList(_context.Departments, "Id", "Id", employee.EmpDepartmentId);
+           // ViewBag.gender = new List<string>() { "Male", "Female" };
+            ViewData["EmpDepartmentId"] = new SelectList(_context.Departments, "Id", "Name", employee.EmpDepartmentId);
             return View(employee);
         }
 

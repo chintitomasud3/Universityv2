@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programming\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\UniversityVersion2.Web.csproj": {}
+    "E:\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\UniversityVersion2.Web.csproj": {}
   },
   "projects": {
-    "D:\\Programming\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\UniversityVersion2.Web.csproj": {
+    "E:\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\UniversityVersion2.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\UniversityVersion2.Web.csproj",
+        "projectUniqueName": "E:\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\UniversityVersion2.Web.csproj",
         "projectName": "UniversityVersion2.Web",
-        "projectPath": "D:\\Programming\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\UniversityVersion2.Web.csproj",
-        "packagesPath": "C:\\Users\\Masudur\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\obj\\",
+        "projectPath": "E:\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\UniversityVersion2.Web.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "E:\\Universityv2\\UniversityVersion2.Web\\UniversityVersion2.Web\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Masudur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,7 +73,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -88,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

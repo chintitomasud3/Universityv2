@@ -20,6 +20,12 @@ namespace UniversityVersion2.Web.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.countries = new List<string>()
+            {
+                "Bangladesh",
+                "India"
+
+            };
             return View();
         }
 
@@ -40,5 +46,7 @@ namespace UniversityVersion2.Web.Controllers
             employee.Address = "japan garden city";
             return View(employee);
         }
+
+        
     }
 }
