@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-MasudUniversity-D692E498-6023-4B82-AB52-A4C044F8474F</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20221029103608_studentdepartment.cs" />
+    <Compile Remove="Data\Migrations\20221029103608_studentdepartment.Designer.cs" />
+    <Compile Remove="Data\Migrations\20221029103736_studentdepartmentremove.cs" />
+    <Compile Remove="Data\Migrations\20221029103736_studentdepartmentremove.Designer.cs" />
+    <Compile Remove="Data\Migrations\20221029103840_haire.cs" />
+    <Compile Remove="Data\Migrations\20221029103840_haire.Designer.cs" />
+    <Compile Remove="Data\Migrations\20221029103911_haire2.cs" />
+    <Compile Remove="Data\Migrations\20221029103911_haire2.Designer.cs" />
+    <Compile Remove="Data\Migrations\20221029104222_hmm.cs" />
+    <Compile Remove="Data\Migrations\20221029104222_hmm.Designer.cs" />
+    <Compile Remove="Data\Migrations\20221029104335_hmm2.cs" />
+    <Compile Remove="Data\Migrations\20221029104335_hmm2.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.29" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.29" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.29" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.30" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.30">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

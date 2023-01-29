@@ -1,0 +1,91 @@
+﻿@model IEnumerable<MasudUniversity.Models.Student>
+
+@{
+    ViewData["Title"] = "Jquerypractice";
+}
+
+<h1>Jquerypractice</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodGroup)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BloodGroup)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StudentId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StudentId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StudentId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<button>Send an HTTP GET request to a page and get the result back</button>
+<input type="text" id="txtName" />
+<ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ol>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "/Students/StudentList",
+                    dataType: "json",
+                    success: function (response) {
+                        console.log(response[0]);
+                        $("ol").append(response[0].studentName);
+                        //$("ol").append(response[0].email);
+                        $("ol").append("<li>"+response[0].email+"<li>");
+                      
+                    },
+                    failure: function (response) {
+                        alert(response.responseText);
+                    },
+                    error: function (response) {
+                        alert(response.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+    
+}
